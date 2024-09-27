@@ -18,27 +18,40 @@ Tech stack:
 cd outfit_organizer/
 ```
 
-2. Set up `node_modules` in the `frontend/` and `backend/` directories:
+2. Set up `node_modules`:
 ```
 cd frontend/
 npm install
 ```
 ```
-cd backend/
+cd routing/
 npm install
 ```
 
-3. Set up and activate Python virtual environment in `/rembg-service`:
+3. Set up and activate Python virtual environment:
 ```
-cd /rembg-service
-python -m venv venv
+cd backend/
+python3 -m venv venv
 source venv/bin/activate
 ```
 - If you want to get out of the Python virtual environment, simply run `deactivate`
 
-4. Install all the Python dependencies:
+4. Install all the necessary Python dependencies:
 ```
 pip install -r requirements. txt
+```
+
+5. Setup `.env` file for environment variables and add username / password for PostgreSQL:
+```
+cd backend/database/
+cp .env.dev .env
+```
+
+6. Set up the PostgreSQL database:
+```
+cd backend/database/
+brew install postgresql@15
+python3 create_db.py
 ```
 
 ### Running the servers locally
@@ -48,12 +61,12 @@ In `frontend/`:
 npm run serve
 ```
 
-In `backend/`:
+In `routing/`:
 ```
 node index.js
 ```
 
-In `rembg-service/`:
+In `backend/rembg-service/`:
 ```
 python remove-background.py
 ```
