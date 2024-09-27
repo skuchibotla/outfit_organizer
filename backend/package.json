@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/skuchibotla/outfit_organizer#readme",
   "dependencies": {
+    "axios": "^1.7.7",
     "express": "^4.21.0"
   },
   "devDependencies": {
