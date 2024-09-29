@@ -8,7 +8,8 @@ app.get('/upload', async (req, res) => {
   try {
     const response = await axios.get('http://localhost:8000/remove-background', {
       params: {
-        image_path: req.params.image_path
+        image_path: req.params.image_path,
+        user_id: req.params.user_id
       }
     });
 
