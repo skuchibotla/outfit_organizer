@@ -6,7 +6,7 @@ Solve your "I don't have anything to wear" problems and overconsumption with Out
 
 Tech stack:
 
-- Vue.js (frontend)
+- React (frontend)
 - Express.js (routing)
 - Python Flask (backend)
 - PostgreSQL (database)
@@ -58,7 +58,7 @@ python3 create_db.py
 
 In `frontend/`:
 ```
-npm run serve
+npm start
 ```
 
 In `routing/`:

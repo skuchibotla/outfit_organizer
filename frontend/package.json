@@ -1,37 +1,39 @@
 {
-  "name": "outfit-organizer-frontend",
-  "version": "1.0.0",
-  "type": "module",
-  "description": "Frontend for outfit organizer project",
-  "main": "babel.config.js",
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/skuchibotla/outfit_organizer.git"
-  },
-  "author": "Sridevi Kuchibotla",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/skuchibotla/outfit_organizer/issues"
-  },
-  "homepage": "https://github.com/skuchibotla/outfit_organizer#readme",
-  "devDependencies": {
-    "@eslint/js": "^9.11.1",
-    "@vue/cli-service": "^5.0.8",
-    "eslint": "^9.11.1",
-    "eslint-plugin-vue": "^9.28.0",
-    "globals": "^15.9.0",
-    "typescript-eslint": "^8.7.0"
-  },
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "@primevue/themes": "^4.2.2",
-    "filepond": "^4.31.4",
-    "primeicons": "^7.0.0",
-    "primevue": "^4.2.2",
-    "vue": "^3.5.13",
-    "vue-filepond": "^7.0.4"
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.6.4",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
